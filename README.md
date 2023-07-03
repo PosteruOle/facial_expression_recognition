@@ -1,2 +1,3 @@
-# machine_learning_project
-The mandatory project for the purpose of Machine Learning master studies curriculum.
+# Facial expression recognition model
+CNN based pytorch implementation on facial expression recognition
+Datasets: ExpW (Expression in-the-wild), CK+, Face expression recognition dataset...
