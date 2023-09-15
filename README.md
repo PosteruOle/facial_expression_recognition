@@ -5,8 +5,8 @@ This repository contains student project that has been created for the purpose o
 The final goal of this project is to create a model that will be able to recognize certain number of emotions on different pictures of different faces.
 
 ## Datasets
-- CK+
-- FER2013
+- CK+ - contains adaptaded data up to 920 images from 920 original CK+ dataset. Data is already reshaped to 48x48 pixels, in grayscale format and facecropped using haarcascade_frontalface_default. Emotions that are supported in this dataset are: angry, contempt, disgust, fear, happy, sadness, surprise.
+- FER2013 - this dataset consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centred and occupies about the same amount of space in each image. The training set consists of 28,709 examples and the public test set consists of 3,589 examples. Emotions that are supported in this dataset are: angry, disgust, fear, happy, neutral, sad, surprise. 
 
 ## The structure of the repository
 Repository contains of three the most important notebooks. Those are:
