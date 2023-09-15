@@ -1,20 +1,20 @@
-# Projekat iz predmeta Mašinsko učenje
-Ovaj repozitorijum sadrži projekat urađen za potrebe kursa Mašinsko učenje na master studijama Matematičkog fakulteta u Beogradu.
-## Prepoznavanje emocija na slikama lica
-Cilj projekta je prepoznavanje određenog broja emocija na različitim slikama različitih lica.
-## Skupovi podataka
-CK+
-FER2013
-## Članovi tima
+# Machine Learning master course project
+This repository contains student project that has been created for the purpose of Machine Learning course on the master studies of the Faculty of Mathematics, University of Belgrade.
+
+## Facial expression recognition
+The final goal of this project is to create a model that will be able to recognize certain number of emotions on different pictures of different faces.
+
+## Datasets
+- CK+
+- FER2013
+
+## The structure of the repository
+Repository contains of three the most important notebooks. Those are:
+- preprocessing_functions.ipynb
+- 01_Processing_FER2013_dataset.ipynb
+- 02_Processing_CK+_dataset.ipynb
+
+## Team members
 - Jovan Marković
-- Petar Tešić
+- Petar Tešič
 
-  
-## Facial expression recognition model
-CNN based pytorch implementation on facial expression recognition
-
-Datasets: CK+ and FER2013
-
-Firstly, unzip datasets.zip into current directory. This will create folder datasets with required datasets for our models.
-
-LBP model: https://www.researchgate.net/publication/222574859_Facial_expression_recognition_based_on_Local_Binary_Patterns_A_comprehensive_study
