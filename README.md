@@ -10,9 +10,12 @@ The final goal of this project is to create a model that will be able to recogni
 
 ## The structure of the repository
 Repository consists of three the most important jupyter notebooks (there are some others notebooks, but there are not that relevant). Those are:
-- 00_Preprocessing_Functions.ipynb
+- 00_Preprocessing_Functions.ipynb - contains
 - 01_Processing_FER2013_dataset.ipynb
 - 02_Processing_CK+_dataset.ipynb
+- 03_Ensemble_FER2013_dataset.ipynb
+- 04_LBP_CK+_dataset.ipynb
+- preprocessing_functions.ipynb
 
 ## Team members
 - Jovan Marković
