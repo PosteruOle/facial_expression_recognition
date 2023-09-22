@@ -17,11 +17,16 @@ The final goal of this project is to create a model that will be able to recogni
 Repository contains the following items. Every single one of them is listed and briefly explained below:
 
 - datasets.zip - extract that zip into current directory to get necessary datasets to work with
+
 - preprocessing_functions.ipynb - contains necessary functions we used to process datasets we are working with; 
+
 - 01_LBP_CK+_dataset.ipynb - this is a notebook in which we tested different models on CK+ dataset. We have created CNN, SVC and NN models. For SVC and NN we are using LBP preprocessing method;
+
 - 02_Ensemble_FER2013_dataset.ipynb - this is a notebook in which we tested different models on FER2013 dataset. We have created CNN, SVC and NN models. For SVC and NN we are using LBP preprocessing method,
 				      also, we are making more models using ensemble technique;
+
 - 03_Processing_CK+_dataset.ipynb - notebook that tests different CNN models architectures on CK+ datasetl;
+
 - 04_Processing_FER2013_dataset.ipynb - notebook that tests different CNN models architectures on FER2013 dataset.
 
 
