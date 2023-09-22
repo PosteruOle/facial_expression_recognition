@@ -16,7 +16,7 @@ The final goal of this project is to create a model that will be able to recogni
 ## The structure of the repository
 Repository contains the following items. Every single one of them is listed and briefly explained below:
 
-- datasets.zip - extract that zip into current directory to get necessary datasets to work with
+- datasets.zip - extract this zip file into your current directory in order to get necessary datasets;
 
 - preprocessing_functions.ipynb - contains necessary functions we used to process datasets we are working with; 
 
