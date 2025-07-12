@@ -1,34 +1,54 @@
-# Machine Learning master course project
-This repository contains student project that has been created for the purpose of Machine Learning course on the master studies at the Faculty of Mathematics, University of Belgrade.
+# Facial Expression Recognition  
+**Machine Learning Master Course Project**  
+*Faculty of Mathematics, University of Belgrade*
 
-## Team members
-- Jovan Marković
-- Petar Tešič
+---
 
-## Facial expression recognition
-The final goal of this project is to create a model that will be able to recognize certain number of emotions on different pictures of different faces.
+## 👥 Team Members
+- **Jovan Marković**
+- **Petar Tešić**
 
-## Datasets
-- CK+ - contains adaptaded data up to 920 images from 920 original CK+ dataset. Data is already reshaped to 48x48 pixels, in grayscale format and facecropped using haarcascade_frontalface_default. Emotions that are supported in this dataset are: angry, contempt, disgust, fear, happy, sadness, surprise.
+---
 
-- FER2013 - this dataset consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centred and occupies about the same amount of space in each image. The training set consists of 28,709 examples and the public test set consists of 3,589 examples. Emotions that are supported in this dataset are: angry, disgust, fear, happy, neutral, sad, surprise. 
+## 🎯 Project Overview
 
-## The structure of the repository
-Repository contains the following items. Every single one of them is listed and briefly explained below:
+The goal of this project is to build machine learning models capable of recognizing facial expressions (emotions) from grayscale images. This includes exploring various classification algorithms and preprocessing techniques, and experimenting on two popular datasets: **CK+** and **FER2013**.
 
-- datasets.zip - extract this zip file into your current directory in order to get necessary datasets;
+---
 
-- preprocessing_functions.ipynb - contains necessary functions we used to process datasets we are working with; 
+## 🗂 Datasets
 
-- 01_LBP_CK+_dataset.ipynb - this is a notebook in which we tested different models on CK+ dataset. We have created CNN, SVC and NN models. For SVC and NN we are using LBP preprocessing method;
+### 📁 CK+ Dataset
+- Contains ~920 grayscale, 48×48 pixel face-cropped images.
+- Preprocessed using Haar cascade (`haarcascade_frontalface_default`) for face detection.
+- **Supported emotions**: Angry, Contempt, Disgust, Fear, Happy, Sadness, Surprise.
 
-- 02_Ensemble_FER2013_dataset.ipynb - this is a notebook in which we tested different models on FER2013 dataset. We have created CNN, SVC and NN models. For SVC and NN we are using LBP preprocessing method,
-				      also, we are making more models using ensemble technique;
+### 📁 FER2013 Dataset
+- Contains 28,709 training and 3,589 public test images (48×48 pixels, grayscale).
+- Faces are centered and standardized.
+- **Supported emotions**: Angry, Disgust, Fear, Happy, Neutral, Sad, Surprise.
 
-- 03_Processing_CK+_dataset.ipynb - notebook that tests different CNN models architectures on CK+ datasetl;
+---
 
-- 04_Processing_FER2013_dataset.ipynb - notebook that tests different CNN models architectures on FER2013 dataset.
+## 🧪 Repository Structure
 
+| File/Folder | Description |
+|-------------|-------------|
+| `datasets.zip` | Compressed folder with CK+ and FER2013 datasets (extract before running notebooks). |
+| `preprocessing_functions.ipynb` | Helper functions for preprocessing, including face detection and LBP. |
+| `01_LBP_CK+_dataset.ipynb` | SVC, NN, and CNN model experiments on CK+ dataset using LBP preprocessing. |
+| `02_Ensemble_FER2013_dataset.ipynb` | Experiments on FER2013 using SVC, NN, CNN, and ensemble techniques. |
+| `03_Processing_CK+_dataset.ipynb` | CNN architecture experiments on the CK+ dataset. |
+| `04_Processing_FER2013_dataset.ipynb` | CNN architecture experiments on the FER2013 dataset. |
 
-## Conclusions
-While CNN and NN models give best results on training set, the biggest disadvantage using neural networks is overfitting on train set. Using different kinds of regularizations we can manage those disadvantage, but it needs to be investigated futhermore. Using Local Binary Pattern technique in preprocessing, we're getting good results, but when we're working with models, we have two points in our code where we should look for optimization in order to get better performance, which can be tricky. Our models don't get satisfiable enough results, but this work is based on presenting different approaches in solving facial expression classification problems. 
+---
+
+## 📊 Key Findings & Conclusions
+
+- **CNN and NN models** perform well on training sets, but suffer from **overfitting**.
+- Regularization techniques help, but require further tuning.
+- **Local Binary Pattern (LBP)** preprocessing yields good feature extraction for simpler models like SVC and NN.
+- Despite not achieving top-tier results, the project demonstrates a variety of approaches to solving the **facial emotion classification** problem.
+- Further optimization is needed in both **data preprocessing** and **model fine-tuning** to improve generalization on test data.
+
+---
